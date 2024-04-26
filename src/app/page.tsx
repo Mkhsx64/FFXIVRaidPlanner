@@ -1,7 +1,6 @@
 //import Image from "next/image";
-import { Sidebar, useSidebar, Overlay, Button } from '@rewind-ui/core';
+import { Sidebar, useSidebar, Button } from '@rewind-ui/core';
 import React from 'react';
-import { View } from 'ui-react';
 
 export default function Home() {
   const sidebar = useSidebar();
@@ -42,9 +41,9 @@ export default function Home() {
               />
             </Sidebar.Nav.Section>
           </Sidebar.Nav.Section.Item>
-          <Sidebar.Nav.Section.Item label="Roles" href="#" />
-          <Sidebar.Nav.Section.Item label="Permissions" href="#" />
-          <Sidebar.Nav.Section.Item label="Settings" href="#" />
+          <Sidebar.Nav.Section.Item label="List all" href="#" />
+          <Sidebar.Nav.Section.Item label="Select Job" href="#" />
+          <Sidebar.Nav.Section.Item label="Etc" href="#" />
         </Sidebar.Nav.Section>
       </Sidebar.Nav>
   </Sidebar>
