@@ -20,7 +20,7 @@ export default function Home() {
     
     <Sidebar>
       <Sidebar.Nav>
-        
+        test
       </Sidebar.Nav>
   </Sidebar>
 
