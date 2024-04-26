@@ -1,9 +1,6 @@
-//import Image from "next/image";
-import { Sidebar, useSidebar, Button } from '@rewind-ui/core';
 import React from 'react';
 
 export default function Home() {
-  const sidebar = useSidebar();
 
   return (
     
@@ -16,17 +13,6 @@ export default function Home() {
           FFXIV Raid Planner
         </p>
       </div>
-
-    
-    <Sidebar>
-      <Sidebar.Nav>
-        test
-      </Sidebar.Nav>
-  </Sidebar>
-
-    <Button onClick={() => sidebar.toggleMobile()} className="ml-auto flex md:hidden">
-        Toggle
-      </Button>
       
     
     </main>
