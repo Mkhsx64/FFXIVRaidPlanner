@@ -1,6 +1,7 @@
 //import Image from "next/image";
 import { Sidebar, useSidebar, Overlay, Button } from '@rewind-ui/core';
 import React from 'react';
+import { View } from 'ui-react';
 
 export default function Home() {
   const sidebar = useSidebar();
