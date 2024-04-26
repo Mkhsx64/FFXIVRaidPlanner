@@ -1,9 +1,13 @@
 //import Image from "next/image";
-import { Sidebar, useSidebar, Overlay } from '@rewind-ui/core';
+import { Sidebar, useSidebar, Overlay, Button } from '@rewind-ui/core';
 import React from 'react';
 
 export default function Home() {
+  const sidebar = useSidebar();
+
   return (
+    
+
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       
 
@@ -14,8 +18,39 @@ export default function Home() {
       </div>
 
     
-    <Sidebar color="white">
-    </Sidebar>
+    <Sidebar>
+      <Sidebar.Nav>
+        <Sidebar.Nav.Section>
+          <Sidebar.Nav.Section.Title>Job Mitigation</Sidebar.Nav.Section.Title>
+          <Sidebar.Nav.Section.Item label="Users" as="button">
+            <Sidebar.Nav.Section isChild>
+              <Sidebar.Nav.Section.Item
+                icon={<span className="w-1 h-1 rounded bg-transparent" />}
+                label="List all"
+                href="#"
+              />
+              <Sidebar.Nav.Section.Item
+                icon={<span className="w-1 h-1 rounded bg-transparent" />}
+                label="Select Job"
+                href="#"
+              />
+              <Sidebar.Nav.Section.Item
+                icon={<span className="w-1 h-1 rounded bg-transparent" />}
+                label="Etc"
+                href="#"
+              />
+            </Sidebar.Nav.Section>
+          </Sidebar.Nav.Section.Item>
+          <Sidebar.Nav.Section.Item label="Roles" href="#" />
+          <Sidebar.Nav.Section.Item label="Permissions" href="#" />
+          <Sidebar.Nav.Section.Item label="Settings" href="#" />
+        </Sidebar.Nav.Section>
+      </Sidebar.Nav>
+  </Sidebar>
+
+    <Button onClick={() => sidebar.toggleMobile()} className="ml-auto flex md:hidden">
+        Toggle
+      </Button>
       
     
     </main>
