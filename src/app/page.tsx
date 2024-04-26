@@ -20,31 +20,7 @@ export default function Home() {
     
     <Sidebar>
       <Sidebar.Nav>
-        <Sidebar.Nav.Section>
-          <Sidebar.Nav.Section.Title>Job Mitigation</Sidebar.Nav.Section.Title>
-          <Sidebar.Nav.Section.Item label="Users" as="button">
-            <Sidebar.Nav.Section isChild>
-              <Sidebar.Nav.Section.Item
-                icon={<span className="w-1 h-1 rounded bg-transparent" />}
-                label="List all"
-                href="#"
-              />
-              <Sidebar.Nav.Section.Item
-                icon={<span className="w-1 h-1 rounded bg-transparent" />}
-                label="Select Job"
-                href="#"
-              />
-              <Sidebar.Nav.Section.Item
-                icon={<span className="w-1 h-1 rounded bg-transparent" />}
-                label="Etc"
-                href="#"
-              />
-            </Sidebar.Nav.Section>
-          </Sidebar.Nav.Section.Item>
-          <Sidebar.Nav.Section.Item label="List all" href="#" />
-          <Sidebar.Nav.Section.Item label="Select Job" href="#" />
-          <Sidebar.Nav.Section.Item label="Etc" href="#" />
-        </Sidebar.Nav.Section>
+        
       </Sidebar.Nav>
   </Sidebar>
 
