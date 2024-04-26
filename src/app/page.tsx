@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import MitChart from '../components/ui/timelinechart';
 
 export default function Home() {
@@ -13,7 +13,6 @@ export default function Home() {
         <p>
           FFXIV Raid Planner
         </p>
-        <MitChart></MitChart>
       </div>
       
     
